@@ -1,7 +1,12 @@
-print('Hi, PyCharm')
-x = 43
-y = 32
-print(x * y)
-print("End line")
+def print_params():
+    print ('Привет!')
+
+
+for _ in range(2):
+    print_params()
+
+
+
+
 
 
