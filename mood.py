@@ -26,10 +26,6 @@ class Process:
     try:
         mike = Generate("Mike", 150)
         mike.func()
-        #anna = Generate("Anna", 99)
-        #anna.func()
-        #tom = Generate("Tom", 11)
-        #tom.func()
     except Exception as e:
         print(f"Некорректный возраст: {e}")
     except ValueError as e:
