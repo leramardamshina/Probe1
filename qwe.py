@@ -7,6 +7,7 @@
 #result = [x ** 2 for x in my_numbers if x % 2]
 #print(result)
 
+#Второе решение:
 def add(x):
     return [x ** 2 for x in my_numbers if x % 2]
 
