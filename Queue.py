@@ -52,11 +52,9 @@ class Cafe(threading.Thread):
         self.queue.put(customer)
 
 class Customer(threading.Thread):#Запускается, если есть свободные столы
-    def __init__(self, customer_num):
-        self.customer_num = customer_num
+    def __init__(self, customer):
+        self.customer = customer
 
-    def eat_and_leave(self, number):
-        print(f'Посетитель {self.customer_num} покушал и ушел за стола {number}')
 
 
 #Создаем столики в кафе
