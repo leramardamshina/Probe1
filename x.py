@@ -27,6 +27,9 @@ class Cafe:
                 time.sleep(5)
                 print(f"Посетитель номер {customer.customer_number} покушал и ушёл.")
                 table.is_busy = False
+                if not self.queue.empty():
+                    next_customer = self.queue.get()
+                    self.serve_customer(next_customer)
                 return
         print(f"Посетитель номер {customer.customer_number} ожидает свободный стол")
         self.queue.put(customer)
